@@ -54,5 +54,5 @@ io.on('connection',socket=>{
 })
 
 // Listening to the port 5000 or general port.
-const PORT = 5000 || process.env.PORT;
+const PORT = process.env.PORT || 5000 ;
 server.listen(PORT,()=>console.log(`Sever is running ${PORT}`));
